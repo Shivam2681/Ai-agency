@@ -7,14 +7,16 @@ const MobileNav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
 //   bg-[#1A1A2E]/80
+// bg-gradient-to-b from-[#1D1E30]/80 to-black
 
   return (
-    <nav className="sticky top-0 z-50 bg-gradient-to-b from-[#1D1E30]/80 to-black backdrop-blur-sm ">
+    <nav className="sticky top-0 z-50 bg-[#1A1A2E]/80 backdrop-blur-sm ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
             <Brain className="w-8 h-8 text-[#FF007A]" />
+              <h1 className='text-white font-bold ml-2'>AI Automation Agency</h1>
           </div>
 
           {/* Desktop Navigation */}

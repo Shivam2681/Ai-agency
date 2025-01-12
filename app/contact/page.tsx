@@ -125,7 +125,7 @@ export default function Contact() {
                         <span>Pick a date</span>
                       </Button>
                     </PopoverTrigger>
-                    <PopoverContent className="w-auto p-0 bg-[#121212] border-[#6A4DFF]">
+                    <PopoverContent className="w-auto p-0 border-[#6A4DFF]">
                       <CalendarComponent
                         mode="single"
                         className="rounded-md border"
@@ -151,7 +151,7 @@ export default function Contact() {
             <h2 className="text-3xl font-bold text-center mb-12">Book a Meeting with Us</h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <Card className="p-8 bg-[#1A103D]/85 border-none shadow-[0_0_30px_rgba(106,77,255,0.2)]">
-                <h3 className="text-xl font-bold mb-6 flex items-center">
+                <h3 className="text-xl text-white font-bold mb-6 flex items-center">
                   <Clock className="w-5 h-5 mr-2 text-[#FF6BDA]" />
                   Select Date & Time
                 </h3>
@@ -172,7 +172,7 @@ export default function Contact() {
                 </div>
               </Card>
               <Card className="p-8 bg-[#1A103D]/85 border-none shadow-[0_0_30px_rgba(106,77,255,0.2)]">
-                <h3 className="text-xl font-bold mb-6">Meeting Details</h3>
+                <h3 className="text-xl font-bold text-white mb-6">Meeting Details</h3>
                 <div className="space-y-4 mb-6">
                   <Button
                     variant="outline"
@@ -221,7 +221,7 @@ export default function Contact() {
               ].map((contact, i) => (
                 <Card key={i} className="p-6 bg-[#1A103D]/90 border-2 border-transparent hover:border-[#FF6BDA] shadow-[0_0_30px_rgba(106,77,255,0.2)] transition-all duration-300">
                   <contact.icon className="w-8 h-8 mb-4" style={{ color: contact.color }} />
-                  <h3 className="text-xl font-bold mb-2">{contact.title}</h3>
+                  <h3 className="text-xl font-bold text-white mb-2">{contact.title}</h3>
                   <p className="text-[#E4E4E4]">{contact.info}</p>
                 </Card>
               ))}

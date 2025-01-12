@@ -111,7 +111,7 @@ export default function Services() {
               ].map((service, i) => (
                 <Card key={i} className="p-8 bg-[#2A2B3F]/80 border-none shadow-[0_0_30px_rgba(138,43,226,0.3)] hover:shadow-[0_0_40px_rgba(138,43,226,0.4)] transition-all duration-300">
                   <service.icon className={`w-12 h-12 mb-6`} style={{ color: service.color }} />
-                  <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
+                  <h3 className="text-2xl text-white font-bold mb-4">{service.title}</h3>
                   <p className="text-[#B0B0B0]">{service.description}</p>
                 </Card>
               ))}
@@ -153,7 +153,7 @@ export default function Services() {
               ].map((service, i) => (
                 <Card key={i} className="p-8 bg-[#2A2B3F]/80 border-none shadow-[0_0_30px_rgba(138,43,226,0.3)] hover:shadow-[0_0_40px_rgba(138,43,226,0.4)] transition-all duration-300">
                   <service.icon className="w-12 h-12 text-[#FF007A] mb-6" />
-                  <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
+                  <h3 className="text-2xl font-bold text-white mb-4">{service.title}</h3>
                   <p className="text-[#B0B0B0] mb-4">{service.description}</p>
                   <div className="flex items-center">
                     <Clock className="w-5 h-5 text-[#FF007A] mr-2" />
@@ -199,7 +199,7 @@ export default function Services() {
               ].map((service, i) => (
                 <Card key={i} className="p-8 bg-[#2A2B3F]/80 border-none shadow-[0_0_30px_rgba(138,43,226,0.3)] hover:shadow-[0_0_40px_rgba(138,43,226,0.4)] transition-all duration-300">
                   <service.icon className="w-12 h-12 text-[#00FFFF] mb-6" />
-                  <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
+                  <h3 className="text-2xl font-bold text-white mb-4">{service.title}</h3>
                   <p className="text-[#B0B0B0] mb-4">{service.description}</p>
                   <div className="flex items-center">
                     <Clock className="w-5 h-5 text-[#00FFFF] mr-2" />
@@ -247,7 +247,7 @@ export default function Services() {
               ].map((feature, i) => (
                 <Card key={i} className="p-6 bg-[#2A2B3F]/80 border-none shadow-[0_0_30px_rgba(138,43,226,0.3)] hover:shadow-[0_0_40px_rgba(138,43,226,0.4)] transition-all duration-300">
                   <feature.icon className="w-12 h-12 text-[#FF007A] mb-4" />
-                  <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
+                  <h3 className="text-xl font-bold text-white mb-2">{feature.title}</h3>
                   <p className="text-[#B0B0B0]">{feature.description}</p>
                 </Card>
               ))}
@@ -264,12 +264,12 @@ export default function Services() {
                   <Star key={i} className="w-6 h-6 text-[#FF007A] fill-[#FF007A]" />
                 ))}
               </div>
-              <p className="text-[#B0B0B0] text-lg italic mb-6">
+              <p className="text-white text-lg italic mb-6">
                 "The AI automation solutions provided by the team have transformed our business operations completely. We've seen a 40% reduction in operational costs and a significant improvement in customer satisfaction."
               </p>
               <div>
                 <p className="font-semibold text-lg">David Anderson</p>
-                <p className="text-[#B0B0B0]">CTO, Global Solutions Inc.</p>
+                <p className="text-white">CTO, Global Solutions Inc.</p>
               </div>
             </Card>
           </div>

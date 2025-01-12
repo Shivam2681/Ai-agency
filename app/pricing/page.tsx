@@ -70,10 +70,10 @@ export default function Pricing() {
               Whether you're automating workflows or developing custom AI agents, our straightforward pricing ensures no surprises—just value.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Button className="bg-gradient-to-r from-[#FF5DB1] to-[#A06DFF] hover:opacity-90 text-lg px-8 py-6 rounded-md">
+              <Button className="bg-gradient-to-r from-[#FF5DB1] to-[#A06DFF] border-2 hover:opacity-90 text-lg px-8 py-6 rounded-md">
                 Get a Free Quote
               </Button>
-              <Button className="bg-transparent border-2 border-transparent bg-gradient-to-r from-[#FF5DB1] to-[#A06DFF] hover:opacity-90 text-lg px-8 py-6 rounded-md relative">
+              <Button className="bg-transparent md:w-1/4 border-2 border-transparent bg-gradient-to-r from-[#FF5DB1] to-[#A06DFF] hover:opacity-90 text-lg px-8 py-6 rounded-md relative">
                 <span className="absolute inset-[2px] bg-[#1E0131] rounded-md flex items-center justify-center">
                   Explore Plans
                 </span>
@@ -105,7 +105,7 @@ export default function Pricing() {
               ].map((feature, i) => (
                 <Card key={i} className="p-8 bg-[#2A0148] border-none shadow-[0_0_30px_rgba(160,109,255,0.2)] hover:shadow-[0_0_40px_rgba(160,109,255,0.3)] transition-all duration-300">
                   <feature.icon className="w-12 h-12 text-white mb-6 mx-auto" />
-                  <h3 className="text-2xl font-bold mb-4 text-center">{feature.title}</h3>
+                  <h3 className="text-2xl font-bold mb-4 text-white text-center">{feature.title}</h3>
                   <p className="text-[#C2C2D2] text-center">{feature.description}</p>
                 </Card>
               ))}
@@ -176,7 +176,7 @@ export default function Pricing() {
                       Most Popular
                     </div>
                   )}
-                  <h3 className="text-2xl font-bold mb-2">{plan.title}</h3>
+                  <h3 className="text-2xl font-bold text-white mb-2">{plan.title}</h3>
                   <div className="text-3xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-[#FF5DB1] to-[#A06DFF]">
                     {plan.price}
                   </div>
@@ -298,10 +298,10 @@ export default function Pricing() {
               Let's discuss how our AI solutions can help you achieve your business goals.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Button className="bg-gradient-to-r from-[#FF5DB1] to-[#A06DFF] hover:opacity-90 text-lg px-8 py-6 rounded-md">
+              <Button className="bg-gradient-to-r from-[#FF5DB1] to-[#A06DFF] border-2 hover:opacity-90 text-lg px-8 py-6 rounded-md">
                 Schedule a Call <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button className="bg-transparent border-2 border-transparent bg-gradient-to-r from-[#FF5DB1] to-[#A06DFF] hover:opacity-90 text-lg px-8 py-6 rounded-md relative">
+              <Button className="bg-transparent md:w-1/4 border-2 border-transparent bg-gradient-to-r from-[#FF5DB1] to-[#A06DFF] hover:opacity-90 text-lg px-8 py-6 rounded-md relative">
                 <span className="absolute inset-[2px] bg-[#26003F] rounded-md flex items-center justify-center">
                   Chat with Us <MessageSquare className="ml-2 h-5 w-5" />
                 </span>
@@ -317,7 +317,7 @@ export default function Pricing() {
               <div>
                 <div className="flex items-center space-x-2 mb-4">
                   <Brain className="w-6 h-6 text-[#FF5DB1]" />
-                  <span className="font-bold">AI Agency</span>
+                  <span className="font-bold">AI Automation Agency</span>
                 </div>
                 <p className="text-[#C2C2D2]">
                   Transforming businesses through intelligent automation.
@@ -339,7 +339,7 @@ export default function Pricing() {
                     <a
                       key={i}
                       href={item.href}
-                      className="text-[#C2C2D2] hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-[#FF5DB1] to-[#A06DFF] transition-all"
+                      className="text-[#C2C2D2] hover:text-[#FF007A]/80 hover:shadow-[0_0_15px_rgba(255,0,122,0.5)] transition-all"
                     >
                       <item.icon className="w-6 h-6" />
                     </a>
@@ -348,7 +348,7 @@ export default function Pricing() {
               </div>
             </div>
             <div className="mt-8 pt-8 border-t border-[#3B015F] text-center text-[#C2C2D2]">
-              © 2025 AI Agency. All rights reserved.
+              © 2025 AI Automation Agency. All rights reserved.
             </div>
           </div>
         </footer>

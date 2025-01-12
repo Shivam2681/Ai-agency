@@ -123,7 +123,7 @@ export default function About() {
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <Card className="p-8 bg-[#28293E]/80 border-none shadow-[0_0_30px_rgba(138,43,226,0.3)]">
-                <p className="text-[#B0B0B0] text-lg leading-relaxed">
+                <p className="text-white text-lg leading-relaxed">
                   Partner with us to leverage the transformative power of AI. Our expertise spans across industries, enabling businesses to achieve unprecedented levels of efficiency, innovation, and growth through intelligent automation and data-driven insights.
                 </p>
               </Card>
@@ -175,10 +175,10 @@ export default function About() {
                       <Star key={i} className="w-5 h-5 text-[#FF007A] fill-[#FF007A]" />
                     ))}
                   </div>
-                  <p className="text-[#B0B0B0] mb-4">{testimonial.text}</p>
+                  <p className="text-white mb-4">{testimonial.text}</p>
                   <div>
                     <p className="font-semibold">{testimonial.name}</p>
-                    <p className="text-[#B0B0B0] text-sm">{testimonial.title}</p>
+                    <p className="text-white text-sm">{testimonial.title}</p>
                   </div>
                 </Card>
               ))}
