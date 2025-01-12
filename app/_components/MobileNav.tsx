@@ -6,8 +6,10 @@ import { Button } from '@/components/ui/button';
 const MobileNav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+//   bg-[#1A1A2E]/80
+
   return (
-    <nav className="sticky top-0 z-50 bg-[#1A1A2E]/80 backdrop-blur-sm ">
+    <nav className="sticky top-0 z-50 bg-gradient-to-b from-[#1D1E30]/80 to-black backdrop-blur-sm ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -63,10 +65,11 @@ const MobileNav = () => {
         </div>
 
         {/* Mobile Menu */}
+        {/* bg-gradient-to-b from-[#121212] to-[#1A103D] */}
         <div
-          className={`md:hidden absolute left-0 right-0 bg-gradient-to-b from-[#121212] to-[#1A103D] transition-all duration-300 ease-in-out ${
+          className={`md:hidden absolute right-0 rounded-md bg-gradient-to-b from-[#1D1E30] to-black transition-all duration-300 ease-in-out ${
             isOpen 
-              ? 'opacity-100 translate-y-0 h-screen' 
+              ? 'opacity-100 translate-y-0 mt-2' 
               : 'opacity-0 -translate-y-full h-0'
           }`}
         >
@@ -96,7 +99,7 @@ const MobileNav = () => {
               Pricing
             </a>
             <a 
-              href="#" 
+              href="/contact" 
               className="block text-center text-xl font-bold text-[#E4E4E4] hover:text-[#FF6BDA] hover:underline decoration-2 underline-offset-4 transition-all"
             >
               Contact
