@@ -68,12 +68,13 @@ const MobileNav = () => {
 
         {/* Mobile Menu */}
         {/* bg-gradient-to-b from-[#121212] to-[#1A103D] */}
-        <div
+        <div 
           className={`md:hidden absolute right-0 rounded-md bg-gradient-to-b from-[#1D1E30] to-black transition-all duration-300 ease-in-out ${
             isOpen 
               ? 'opacity-100 translate-y-0 mt-2' 
               : 'opacity-0 -translate-y-full h-0'
           }`}
+          
         >
           <div className="px-4 pt-8 pb-6 space-y-6">
             <a 

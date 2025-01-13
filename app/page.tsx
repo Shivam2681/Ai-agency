@@ -118,14 +118,15 @@ export default function Home() {
             ].map((item, i) => (
               <Card
                 key={i}
-                className="p-6 bg-[#1A1826CC] md:bg-transparent border-none transition-all duration-300 hover:border-2 hover:border-[#8A2BE2] hover:shadow-[0_0_30px_rgba(138,43,226,0.3)] group "
+                className="p-6 bg-[#1A1826CC] md:bg-transparent border-none transition-all duration-300
+                 hover:border-2 hover:border-[#8A2BE2]  hover:shadow-[0_0_30px_rgba(138,43,226,0.3)] group "
               >
                 <item.icon className="w-12 h-12 text-[#FF007A] mb-4" />
                 <h3 className="text-xl text-white font-semibold mb-2">
                   {item.title}
                 </h3>
                 <p className="text-[#B0B0B0] mb-4">{item.desc}</p>
-                <p className="text-[#B0B0B0] text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p className="text-[#B0B0B0] text-sm opacity-100 lg:opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   {item.longDesc}
                 </p>
               </Card>
